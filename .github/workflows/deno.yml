@@ -16,5 +16,5 @@ jobs:
         token: ${{ secrets.REPO_TOKEN }}
     - uses: pkg6/gruploader-action@develop
       with:
-        github_token: ${{ secrets.GH_TOKEN }}
+        github_token: ${{ secrets.REPO_TOKEN }}
         action: gh-page
