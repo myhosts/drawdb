@@ -12,9 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.REPO_TOKEN }}
     - uses: pkg6/gruploader-action@develop
       with:
         github_token: ${{ secrets.REPO_TOKEN }}
-        action: gh-page
+        action: node-gh-page
